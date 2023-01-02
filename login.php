@@ -4,6 +4,7 @@
     </head>
     <body>
         <h1>Login Aplikasi</h1>
+        <h6>User Access</h6>
         <form action="proses.php" method="post">
             <table>
                 <tr>
