@@ -4,12 +4,12 @@
     </head>
     <body>
         <h1>Login Aplikasi</h1>
-        <form action="proses.php" method="post">
+        <form action="proses_admin.php" method="post">
             <table>
                 <tr>
                     <td>Username</td>
                     <td>:</td>
-                    <td><input type="text" name="user" id="user"></td>
+                    <td><input type="text" name="admin" id="admin"></td>
                 </tr>
                 <tr>
                     <td>Password</td>
@@ -20,9 +20,6 @@
                     <td></td>
                     <td></td>
                     <td><input type="submit" value="login"></td>
-                </tr>
-                <tr>
-                    <td>admin klik <a href="login_admin.php">sini</a></td>
                 </tr>
             </table>
         </form>
