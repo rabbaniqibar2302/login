@@ -8,9 +8,9 @@
         <form action="proses.php" method="post">
             <table>
                 <tr>
-                    <td>Username</td>
+                    <td>Email</td>
                     <td>:</td>
-                    <td><input type="text" name="user" id="user"></td>
+                    <td><input type="text" name="email" id="email"></td>
                 </tr>
                 <tr>
                     <td>Password</td>
