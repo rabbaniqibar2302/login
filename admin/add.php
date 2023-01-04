@@ -22,7 +22,7 @@
             <label>Penerbit</label>
             <input type="text" name="penerbit">
             <br>
-            <button>Button</button>
+            <input type="submit" value="submit">
             <br>
         </form>
     </div>

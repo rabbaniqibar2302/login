@@ -21,7 +21,8 @@
     <div class="table">
         <h2>Selamat Datang di BUKU STORE</h2>
         <h1>Data Buku</h1>
-        <button><a href="add.php">tambah buku </a></button>
+        <button><a href="add.php">tambah buku</a></button>
+        <button><a href="add_anggota.php">tambah Anggota</a></button>
         <br>
         <br>
         <table border="1">
