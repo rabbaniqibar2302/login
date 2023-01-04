@@ -10,10 +10,17 @@
         <?php
         session_start();
         if($_SESSION['status']!='login'){
-            header('location:../login.php?pesan=belum_login');
+            header('location:login.php?pesan=belum_login');
         }
         ?>
-        <h4>Welcome <?php echo $_SESSION['email']?> anda telah login</h4>
+        <h4>Welcome <?php 
+        include '../koneksi_db.php';
+        $email = $_SESSION['email'];
+        $anggota = mysqli_query($koneksi,"select * from anggota where email = '$email'");
+        foreach($anggota as $nama){
+            echo $nama['nama'];
+        }
+        ?> anda telah login</h4>
         
         <!-- end -->
 

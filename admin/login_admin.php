@@ -4,13 +4,13 @@
     </head>
     <body>
         <h1>Login Aplikasi</h1>
-        <h6>User Access</h6>
-        <form action="proses.php" method="post">
+        <h6>Admin Access</h6>
+        <form action="proses_admin.php" method="post">
             <table>
                 <tr>
-                    <td>Email</td>
+                    <td>Admin</td>
                     <td>:</td>
-                    <td><input type="text" name="email" id="email"></td>
+                    <td><input type="text" name="admin" id="admin"></td>
                 </tr>
                 <tr>
                     <td>Password</td>
@@ -23,7 +23,7 @@
                     <td><input type="submit" value="login"></td>
                 </tr>
                 <tr>
-                    <td>admin klik <a href="login_admin.php">sini</a></td>
+                    <td>user klik <a href="../user/login.php">sini</a></td>
                 </tr>
             </table>
         </form>
