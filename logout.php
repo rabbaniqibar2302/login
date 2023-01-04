@@ -6,4 +6,4 @@ session_start();
 session_destroy();
 
 // mengarahkan halaman dan memberikan pesan logout
-header("location:../LOGIN/login.php?pesan=logout");
+header("location:index.php?pesan=logout");
