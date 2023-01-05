@@ -48,6 +48,7 @@
                     echo "<td>" . $row['penerbit'] . "</td>";
                 ?>
                     <td>
+                        <a href="update.php?id_buku=<?php echo $row['id_buku']; ?>">EDIT</a>
                         <a href="proses-hapus.php?id_buku=<?php echo $row['id_buku']; ?>">HAPUS</a>
                     </td>
 
