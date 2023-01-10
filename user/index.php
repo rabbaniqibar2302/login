@@ -40,6 +40,7 @@
                 <th>Pengarang</th>
                 <th>Tahun Terbit</th>
                 <th>Penerbit</th>
+                <th>Aksi</th>
 
                 <?php
                 include '../koneksi_db.php';
@@ -54,6 +55,7 @@
                     echo "<td>" . $row['penerbit'] . "</td>";
                 ?>
 
+                <td><a href="keranjang.php?id_buku=<?php echo $row['id_buku'];?>">Add to Cart</a></td>
 
                 <?php
                     echo "</tr>";

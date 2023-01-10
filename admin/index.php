@@ -14,6 +14,14 @@
     if ($_SESSION['status'] != 'login') {
         header('location:login_admin.php?pesan=belum_login');
     }
+
+    include '../koneksi_db.php';
+    // Ambil data semua dari table buku
+    $buku = mysqli_query($koneksi, "select * from buku");
+
+    // Jumlahkan data yang ada di table
+    $jumlah_buku = mysqli_num_rows($buku);
+
     ?>
     <!-- end -->
 
@@ -21,6 +29,7 @@
     <div class="table">
         <h2>Selamat Datang di BUKU STORE</h2>
         <h1>Data Buku</h1>
+        <h3>TOTAL BUKU TERSEDIA : <?php echo $jumlah_buku; ?></h3>
         <button><a href="add.php">tambah buku</a></button>
         <button><a href="add_anggota.php">tambah Anggota</a></button>
         <br>
