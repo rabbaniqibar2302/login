@@ -26,6 +26,7 @@
                     <td>admin klik <a href="../admin/login_admin.php">sini</a></td>
                 </tr>
             </table>
+            <h4>Anda belum punya akun ? Daftar <a href="daftar.php">Disini</a></h4>
         </form>
     </body>
 </html>

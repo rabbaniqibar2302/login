@@ -25,7 +25,6 @@ if ($input) {
 <?php
 }
 
-// mengalihkan ke tampilan awal yah
-header("location:index.php");
+//
 
 ?>

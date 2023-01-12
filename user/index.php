@@ -8,6 +8,7 @@
 <body>
     <h1>Selamat Datang Di Index</h1>
     <h3>Halaman User</h3>
+    <h2></h2>
 
     <!-- Cek halaman apakah sudah login atau belum -->
     <?php
@@ -55,7 +56,7 @@
                     echo "<td>" . $row['penerbit'] . "</td>";
                 ?>
 
-                <td><a href="keranjang.php?id_buku=<?php echo $row['id_buku'];?>">Add to Cart</a></td>
+                    <td><a href="keranjang.php?id_buku=<?php echo $row['id_buku']; ?>">Add to Cart</a></td>
 
                 <?php
                     echo "</tr>";
