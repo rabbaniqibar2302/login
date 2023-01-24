@@ -2,49 +2,50 @@
 
 <head>
     <title>SELAMAT DATANG DI PERPUSTKAAN</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <center>
-            <img src="Bang Riyan.png" alt="" style="width: 250px;">
-            <div class="judul">
-                <h1>Selamat Datang Di Perpustakaan</h1>
-            </div>
-            <div class="sub-judul">
-                <h3>Pilih Akun Untuk Masuk</h3>
-            </div>
-            <table>
-                <tr>
-                    <td>
-                        <div class="card" style="width: auto">
-                            <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">Masuk Sebagai</h5>
-                                    <a href="admin/login_admin.php" class="btn btn-primary">Admin</a>
-                                </div>
-                            </center>
-                        </div>
-                    </td>
-                    <td style="width:40px">
-                    </td>
-                    <td>
-                        <div class="card" style="width: auto">
-                            <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">Masuk Sebagai</h5>
-                                    <a href="user/login.php" class="btn btn-warning">Anggota</a>
-                                </div>
-                            </center>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </center>
-    </div>
+    <h1>Selamat Datang Di Perpustakaan</h1>
+    <h3>Pilih Akun Untuk Masuk</h3>
+
+    <!-- Buat dropdown disini -->
+    <table>
+        <h5 class="card-title">Masuk Sebagai</h5>
+        <a href="admin/login_admin.php">Admin</a>
+        <h5 class="card-title">Masuk Sebagai</h5>
+        <a href="user/login.php">Anggota</a>
+    </table>
+    <!-- Buat dropdown disini -->
+
+    <table border="1">
+            <tr>
+                <th>Judul Buku</th>
+                <th>Pengarang</th>
+                <th>Tahun Terbit</th>
+                <th>Penerbit</th>
+                <th>Harga</th>
+                <th>Quantity</th>
+
+                <?php
+                include 'koneksi_db.php';
+                $buku = mysqli_query($koneksi, "select * from buku");
+                foreach ($buku as $row) {
+                    echo "<tr>";
+                    echo "<td>" . $row['judul_buku'] . "</td>";
+                    echo "<td>" . $row['pengarang'] . "</td>";
+                    echo "<td>" . $row['thn_terbit'] . "</td>";
+                    echo "<td>" . $row['penerbit'] . "</td>";
+                    echo "<td>Rp." . $row['harga'] . "</td>";
+                    echo "<td>" . $row['qty'] . "</td>";
+                ?>
+
+                <?php
+                    echo "</tr>";
+                }
+                ?>
+            </tr>
+        </table>
 </body>
 
 </html>

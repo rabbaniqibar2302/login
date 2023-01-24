@@ -2,7 +2,6 @@
 
 <head>
     <title>User Page</title>
-
 </head>
 
 <body>
@@ -56,7 +55,7 @@
                     echo "<td>" . $row['penerbit'] . "</td>";
                 ?>
 
-                    <td><a href="keranjang.php?id_buku=<?php echo $row['id_buku']; ?>">Add to Cart</a></td>
+                    <td><a href="keranjang.php?id_buku=<?php echo $row['id_buku'];?> & action=add">pesan</a></td>
 
                 <?php
                     echo "</tr>";
