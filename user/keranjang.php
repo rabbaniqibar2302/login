@@ -28,6 +28,9 @@
         // periksa produk dalam keranjang
         $index = -1;
         $keranjang = unserialize(serialize($_SESSION['keranjang']));
+        // Countable solved
+        if (is_countable($keranjang) && count($keranjang) > 0);
+        // Countable solved
         for ($barang = 0; $barang < count($keranjang); $barang++)
             if ($keranjang[$barang]->id_buku == $_GET['id_buku']) {
                 $index = $barang;
