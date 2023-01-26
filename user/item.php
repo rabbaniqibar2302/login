@@ -10,5 +10,3 @@ class Item{
     var $qty;
     // var quantity
 }
-
-?>
