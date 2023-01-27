@@ -31,6 +31,7 @@
     <div class="table">
         <h2>Selamat Datang di BUKU STORE</h2>
         <button><a href="sandbox.php">Sandbox</a></button>
+        <button><a href="pesan.php">Paket</a></button>
         <hr>
         <h1>Data Buku</h1>
         <h3>TOTAL BUKU TERSEDIA : <?php echo $jumlah_buku; ?></h3>

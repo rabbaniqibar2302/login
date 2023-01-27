@@ -26,6 +26,8 @@
                 ?> anda telah login</h4>
     <!-- end -->
     <button><a href="update-anggota.php?id_anggota=<?php echo $nama['id_anggota'] ?>">Customize</a></button>
+    <button><a href="pesan.php">Pesanan Anda</a></button>
+    
 
     <div class="table">
         <h2>Selamat Datang di BUKU STORE</h2>
@@ -55,7 +57,7 @@
                     echo "<td>" . $row['penerbit'] . "</td>";
                 ?>
 
-                    <td><a href="keranjang.php?id_buku=<?php echo $row['id_buku'];?> & action=add">pesan</a></td>
+                    <td><a href="keranjang.php?id_buku=<?php echo $row['id_buku']; ?> & action=add">pesan</a></td>
 
                 <?php
                     echo "</tr>";
