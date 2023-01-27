@@ -12,6 +12,7 @@
             <th>Resi</th>
             <th>Barang</th>
             <th>Status</th>
+            <th>Aksi</th>
         </tr>
         <!-- PHP -->
         <?php
@@ -35,6 +36,9 @@
             }
             echo "</td>";
         ?>
+            <td>
+                <a href="cetak_struk.php">CETAK STRUK</a>
+            </td>
         <?php
             echo "</tr>";
         }
