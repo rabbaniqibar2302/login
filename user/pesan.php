@@ -37,7 +37,7 @@
             echo "</td>";
         ?>
             <td>
-                <a href="cetak_struk.php">CETAK STRUK</a>
+                <a href="cetak_struk.php?id=<?php echo $list['id'];?>">CETAK STRUK</a>
             </td>
         <?php
             echo "</tr>";
